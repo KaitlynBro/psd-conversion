@@ -1,0 +1,49 @@
+.ourStory {
+	display: flex;
+	flex-direction: row;
+}
+
+.bio {
+	width: 70%;
+	margin: 0 auto;
+	font-family: $secondaryFont;
+    color: rgba(31, 31, 31, 0.3);
+    font-size: 16px;
+    p {
+    	margin: 0;
+    }
+}
+
+.years {
+	text-decoration: underline;
+}
+
+.bioAside {
+	width: 30%;
+	margin: 0;
+	font-size: 20px;
+	font-weight: 700;
+	color: rgba(31, 31, 31, 0.3);
+}
+
+.bioStory {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	font-family: $secondaryFont;
+	font-size: 16px;
+    color: rgba(31, 31, 31, 0.3);
+    margin-top: 0;
+    list-style-type: none;
+}
+
+.fa-arrow-right {
+	color: black;
+	padding-right: 12px;
+}
+
+.desktopComputer {
+	display: flex;
+	max-width: 100%;
+	margin: 0 auto;
+}

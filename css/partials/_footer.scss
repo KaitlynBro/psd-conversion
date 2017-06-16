@@ -1,0 +1,103 @@
+footer {
+	background-color: #2a2a2a;
+	padding-top: 72px;
+    padding-bottom: 180px;	
+    position: relative;
+}
+
+.footerDiv {
+	width: 100%;
+	display: flex;
+	padding-top: 75px;
+    align-self: flex-end;
+}
+
+.location , .callUs, .emailUs {
+	width: 33.3%;
+	flex-wrap: wrap;
+	text-align: center;
+	margin: auto;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+
+.footerSubText {
+	padding-top: 80px;
+}
+
+.footerSubText, .city {
+	color: #9c9c9c;
+	font-size: 13px;
+	text-transform: none;
+}
+
+.london {
+	color: #a2a3a5;
+}
+
+.john {
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.copyright {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-size: 14px;
+	margin: auto;
+	justify-content: center;
+	width: 100%;
+	color: #a2a3a5;
+	text-transform: uppercase;
+}
+
+.footerSocialMedia {
+	padding: 0;
+    margin: 0 auto;
+}
+
+.socialMedia {
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mediaIcons {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+}
+
+.footerIcons {
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+}
+
+.socialMedia:hover {
+	padding: 20px;
+}
+
+.socialMedia-facebook {
+	background-color: #3d599b;
+}
+
+.socialMedia-twitter {
+	background-color: #5cadff;
+}
+
+.socialMedia-googlePlus {
+	background-color: #fd4142;
+}
+
+.socialMedia-pinterest {
+	background-color: #de393a;
+}
+
+
+

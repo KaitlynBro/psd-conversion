@@ -1,0 +1,107 @@
+.fullBleedServices {
+	background: url(../assets/services_bg.png);
+	padding-bottom: 115px;
+}
+
+.servicesSliderText1 {
+	margin-top: 0px;
+	padding-top: 100px;
+    line-height: 15px;
+}
+
+.servicesRow {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	background-color: #fcfcfc;
+}
+
+.servicesContent {
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+
+.contentWrapper {
+	width: 585px;
+}
+
+.servicesImage1 {
+	background: url(../assets/web_development.png);
+	width: 940px;
+    height: 500px;
+    max-width: 50%;
+}
+
+.servicesImage2 {
+	background: url(../assets/brand_design.png);
+	width: 940px;
+    height: 500px;
+    max-width: 50%;
+}
+
+.servicesImage3 {
+	background: url(../assets/digital_marketing.png);
+	width: 940px;
+    height: 500px;
+    max-width: 50%;
+}
+
+.servicesNumber {
+	font-family: $secondaryFont;
+	color: #d8d8d8;
+	font-size: 73px;
+	margin: 0;
+	margin-left: -13%;
+	text-align: center;
+}
+
+.servicesTitle {
+	font-family: $primaryFont;
+	color: rgba(31, 31, 31, 0.3);
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: inline-block;
+	position: relative;
+}
+
+.servicesTitle:after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 18px;
+	background-color: rgba(31, 31, 31, 0.3);;
+	width: 50px;
+	height: 1px;
+}
+
+.servicesLorem {
+	font-size: 16px;
+	color: #999999;
+	margin: 0;
+    margin-top: 50px;
+    width: 50%;
+    margin: auto;
+}
+
+.servicesButton {
+	border-width: 1px;
+	border-color:  #999999;
+	border-style: solid;
+	width: 142px;
+	height: 43px;
+	background-color: #fcfcfc;
+	font-family: $secondaryFont;
+	color:  #999999;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: auto;
+	margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+

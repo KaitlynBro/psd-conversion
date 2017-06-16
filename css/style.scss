@@ -1,0 +1,593 @@
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/header";
+@import "partials/qualities";
+@import "partials/ourStory";
+@import "partials/services";
+@import "partials/statistics";
+@import "partials/projects";
+@import "partials/team";
+@import "partials/quote";
+@import "partials/workWithUs";
+@import "partials/footer";
+
+/*I wrote this code, but the design is from a template*/
+/*general styles here*/
+
+body {
+	font-family: $primaryFont;
+}
+
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+h1 {
+	margin: auto;
+	font-size: 50px;
+}
+
+h2 {
+	position: relative;
+	font-size: 25px;
+	color: #000000;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h4 {
+	padding-bottom: 0;
+	margin-top: 97px;
+    margin-bottom: 0;
+    line-height: 0;
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sliderButton {
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    -ms-flex-pack: distribute;
+	justify-content: space-around;
+    width: 142px;
+    height: 44px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.56);
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro';
+    color: #ffffff;
+    letter-spacing: 1.82px;
+    font-size: 13px;
+}
+
+/*partners section begins*/
+
+
+.partnerList {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	}
+}
+
+/*partners section ends*/
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	/*header styles*/
+	
+	header {
+		max-width: 940px;
+		height: 960px;	
+		height: 100vh;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h4 {
+		font-size: 25px;
+	}
+
+	.navLinks li a {
+		display: block;
+	}
+
+	.sliderTextSmall {
+		font-size: 17px;
+	}
+	
+	/*header styles end*/
+
+	/*qualities section begins*/
+	.qualities {
+		width: 100%;
+	}
+
+	.qualitiesTitle {
+		font-size: 20px;
+	}
+
+	.qualitiesText {
+		font-size: 22px;
+		color: #000;
+	}
+
+	/*qualities section ends*/
+
+	/*our story section begins*/
+
+	.bio, .bioStory {
+		width: 100%;
+		padding: 30px;
+		font-size: 25px;
+	}
+
+	.bioStory {
+		display: flex;
+		width: 100%;
+   		align-items: flex-end;
+	}
+
+	/*our story section ends*/
+
+	/*services section begins*/
+
+	.servicesNumber {
+		margin-left: 10%;
+	}
+
+	.servicesTitle {
+		font-size: 20px;
+	}
+
+	.servicesLorem {
+		font-size: 19px;
+		margin-bottom: 15px;
+	}
+
+	.servicesImage1 {
+		background-position: center;
+	}
+	/*services section ends*/
+
+	/*statistics section begins*/
+
+	.stats {
+		display: flex;
+		flex-direction: column;
+		padding-top: 25px;
+		padding-bottom: 10px;
+	}
+
+	.stats li img {
+		width: 30px;
+	    height: 30px;
+	    display: flex;
+	    align-self: center;
+	}
+
+	/*statistics section ends*/
+	
+	/*projects section begins*/
+
+	.projectsList li {
+		font-size: 20px;
+	}
+
+	/*projects section ends*/
+
+	/*our team section begins*/
+
+	.teamPhotos {
+		flex-direction: column;
+
+	}
+	.teamPhotos li {
+		width: 33.3%;
+	    display: block;
+	    float: none;
+	}
+
+	.gallery2 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.team3 {
+		width: 350px;
+	}
+
+	/*our team section ends*/
+
+	/*quote section begins*/
+
+	.mainQuote {
+		font-size: 25px;
+	}
+
+	.quoteExpanded {
+		font-size: 20px;
+	}
+
+	/*quote section ends*/
+
+	/*work with us section begins*/
+
+	.workText3 {
+		font-size: 20px;
+	}
+
+	/*work with us section ends*/
+
+	/*partners section begins*/
+
+	.partnerList li { /*why is this not being applied??*/
+		width: 16.6%
+	}
+
+	/*partners section ends*/
+
+	/*footer begins*/
+	
+	.contactInfo {
+		font-size: 25px;  /*why is this not being applied? */
+	}
+
+	.footerSubText {
+		font-size: 20px;
+	}
+
+	/*footer ends*/
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	/*header styles*/
+	.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+	
+	}
+
+	header {
+		max-width: 100%;
+		height: 100vh;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h4 {
+		font-size: 25px;
+	}
+
+	.logo img {
+		margin-top: 10px;
+	}
+
+	.navLinks {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0;
+	}
+
+	.navLinks a {
+		font-size: 10px;
+	}
+
+	.sliderTextSmall {
+		font-size: 17px;
+	}
+	
+	/*header styles end*/
+
+	/*our story section begins*/
+	.ourStory {
+		display: flex;
+    	flex-direction: column;
+    	margin-left: 20px;
+	}
+
+	.bio, .bioStory, .bioAside {
+		width: 100%;
+		padding: 30px;
+		font-size: 20px;
+	}
+
+	.bioList {
+		display: inline-flex;
+		flex-direction: initial;
+	}
+
+	/*our story section ends*/
+	
+	/*services section begins*/
+
+	.fullBleedServices {
+		padding-bottom: 30px;
+	}
+
+	.servicesSliderText1 {
+		padding-top: 50px;
+	}
+
+	.servicesButton {
+		margin-top: 0px;
+	}
+
+	.servicesImage3 {
+		background-position: center;
+	}
+
+	/*services section ends*/
+
+	/*statistics section begins*/
+
+	.stats li {
+		display: flex;
+    	flex-direction: column;
+	}
+
+	.stats li img {
+		width: 30px;
+	    height: 30px;
+	    display: flex;
+	    align-self: center;
+	}
+
+	/*statistics section ends*/
+
+	/*partners section begins*/
+
+	.partners {
+		width: 100%;
+	}
+
+	.partnerList {
+	    display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	}
+
+	.partnerList li {
+		width: 100%;
+	}
+
+	/*partners section ends*/
+
+	/*footer begins*/
+
+	.contactInfo, .footerSubText {
+		font-size: 16px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	header {
+		width: 100%;
+		height: 100vh;
+		background-position: center center;
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h4 {
+		font-size: 25px;
+	}
+
+	.logo img {
+		margin-top: 0;
+	}
+
+	.navLinks {
+		justify-content: flex-end;
+	}
+
+	.navLinks li a {
+		display: flex;
+		flex-direction: column;
+		font-size: 16px;
+	}
+
+	/*header ends*/
+	
+	/*qualities begins*/
+
+	.qualitiesTitle {
+		font-size: 20px;
+	}
+
+	.qualitiesText {
+		font-size: 16px;
+	}
+
+
+	/*our story beings*/
+
+	.ourStory {
+		display: flex;
+    	flex-direction: column;
+    	margin-left: 20px;
+	}
+
+	.bio, .bioStory, .bioAside {
+		width: 100%;
+		padding: 30px;
+		font-size: 16px;
+	}
+
+	.bioList {
+		display: inline-flex;
+		flex-direction: initial;
+	}
+
+	/*services section begins*/
+
+	.fullBleedServices {
+		padding-bottom: 20px;
+	}
+
+	.servicesImage1 {
+		background-position: inherit;
+	}
+
+	.servicesImage3 {
+		background-position: center;
+	}
+
+	.servicesTitle:after {
+		visibility: hidden;
+	}
+
+	.servicesSliderText {
+		padding-top: 40px;
+		padding-bottom: 10px;
+	}
+
+	.servicesSliderText2 {
+		padding-top: 0;
+	}
+
+	.servicesNumber {
+		margin: 0;
+	    text-align: left;
+	    margin-left: 20px;
+	}
+
+	.servicesTitle {
+		font-size: 16px;
+	}
+
+	.servicesLorem {
+		width: 100%;
+	    padding: 20px;
+	    font-size: 16px;
+	}
+
+	.servicesButton {
+		font-size: 20px;
+		margin: 0;
+    	padding: 0;
+    	margin-left: 23px;
+	}
+
+	/*services section ends*/
+
+	/*stats section begins*/
+
+	.stats li img {
+		width: 30px;
+	    height: 30px;
+	    display: flex;
+	    align-self: center;
+	}
+
+	/*stats section ends*/
+
+	.projectsList {
+		display: block;
+	    padding: 0;
+	    margin-left: 93px;
+	}
+
+	/*quote seconds begins*/
+
+	.mainQuote {
+		font-size: 20px;
+    	text-align: center;
+	}
+
+	.quoteExpanded, .quotePerson, .quoteCompany {
+		font-size: 16px;
+		margin-top: 10px;
+	}
+
+	/*quote section ends*/
+
+	/*work with us section*/
+
+	.workText3 {
+		font-size: 20px;
+	}
+
+	.sliderButton {
+		height: 65px;
+		font-size: 20px;
+	}
+	
+	/*work with us section ends*/
+
+}
+
+	/*query for very obvious breakpoint - team gallery breaks off*/
+	@media (max-width: 1130px) {
+	.gallery2 {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	@media screen and (min-device-width: 480px) and (max-device-width: 700px) { 
+    	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.team3 {
+		width: 350px;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+

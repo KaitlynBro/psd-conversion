@@ -1,0 +1,57 @@
+.qualitiesContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: auto;
+    padding: 0;
+}
+
+.qualities {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+    justify-content: space-around;
+	width: 25%;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #f3f3f3;
+}
+
+.qualitiesIcon {
+	justify-content: center;
+	margin-left: 40px;
+	margin-top: 60px;
+    display: flex;
+    align-self: flex-start;
+}
+
+
+.qualitiesTitle {
+	display: flex;
+    align-self: flex-start;
+    margin-left: 40px;
+	font-size: 14px;
+	font-weight: 700;
+	color: rgba(31, 31, 31, 0.3);
+	text-transform: uppercase;
+}
+
+.qualitiesText {
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+	font-family: $secondaryFont;
+	font-size: 15px;
+	padding: 0 10px;
+    font-size: 15px;
+    color: #999999;
+}
+
+nav li a {
+	color: white;
+}
+
+.noBorder {
+	border-right: none;
+}

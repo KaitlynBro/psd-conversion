@@ -1,0 +1,80 @@
+h2 {
+	color: #000;
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+header {
+	height: 100vh;
+	background: url(../assets/slider1.png);
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	opacity: 0.9;
+}
+
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	img {
+	width: 107px;
+	height: 30px;
+	margin-top: 50px;
+	}
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navLinks {
+	display: flex;
+	list-style-type: none;
+	flex-grow: 1;
+	width: 100%;
+}
+nav li {
+	margin-top: 50px;
+}
+
+nav li a {
+	text-decoration: none;
+	font-size: 12px;
+	color: white;
+	padding-right: 32px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: all ease-in-out 5s;
+}
+
+nav li a:hover {
+	text-decoration: underline;
+}
+
+.sliderTextMain {
+	margin: auto;
+}
+
+.sliderText {
+	display: flex;
+	margin: 0 auto;
+	padding: 0;
+	justify-content: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 36px;
+	letter-spacing: 17px;
+	margin-bottom: 30px;
+}
+
+.sliderTextSmall {
+	letter-spacing: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+}

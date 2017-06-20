@@ -71,24 +71,63 @@ h4 {
 .partnerList {
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
+	flex-wrap: nowrap;
 	li {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+		// width: 100%;
+		list-style: none;
+	}
+	img {
+		width: auto;
+    	max-width: 100%;
 	}
 }
 
 /*partners section ends*/
 
 
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
+
+//media queries begin
+
+
+// /*query for very obvious breakpoint - team gallery breaks off*/
+@media (max-width: 1130px) {
+	.sliderButton {
+		text-decoration: none;
+	}
+
+	.gallery2 {
+		display: flex;
+		flex-direction: column;
+	}
+	.bioAside {
+		padding: 5px;
+    	margin: 0;
+	}
+
+	#team {
+		display: none;
+	}
+
+	.imageGallery2:hover .overlay {
+		opacity: 0;
+	}
+	.partners {
+		display: none;
+	}
+}
+
+@media (max-width: 980px) {
 	/*header styles*/
-	
+	.home, .staff, .quotes {
+		display: none;
+	}
+
+	h1.sliderText {
+		text-align: center;
+	}
+
 	header {
 		max-width: 940px;
-		height: 960px;	
 		height: 100vh;
 	}
 
@@ -134,19 +173,17 @@ h4 {
 		font-size: 25px;
 	}
 
-	.bioStory {
-		display: flex;
-		width: 100%;
-   		align-items: flex-end;
+	div.ourStory {
+			flex-direction: column;
+	}
+	
+	.bioStory li {
+		display: none;
 	}
 
 	/*our story section ends*/
 
 	/*services section begins*/
-
-	.servicesNumber {
-		margin-left: 10%;
-	}
 
 	.servicesTitle {
 		font-size: 20px;
@@ -157,10 +194,40 @@ h4 {
 		margin-bottom: 15px;
 	}
 
-	.servicesImage1 {
-		background-position: center;
+	.servicesImage {
+		display: none;
 	}
+	
+	.servicesRow {
+		justify-content: center;
+	}
+
+	.servicesContent {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.servicesLorem {
+		width: 100%;
+	}
+
+	.servicesButton {
+		margin-bottom: 50px;
+	}
+
 	/*services section ends*/
+
+	/*team section*/
+
+
+	.ourTeam {
+		display: flex;
+	}
+
+	.imageGallery2:hover .overlay {
+   		opacity: 0;
+   	}
 
 	/*statistics section begins*/
 
@@ -169,6 +236,10 @@ h4 {
 		flex-direction: column;
 		padding-top: 25px;
 		padding-bottom: 10px;
+		margin-top: 50px;
+		li {
+			margin-bottom: 30px;
+		}
 	}
 
 	.stats li img {
@@ -233,7 +304,7 @@ h4 {
 
 	/*partners section begins*/
 
-	.partnerList li { /*why is this not being applied??*/
+	.partnerList li { 
 		width: 16.6%
 	}
 
@@ -257,8 +328,7 @@ h4 {
 @media (max-width: 768px) {
 	/*header styles*/
 	.wrapper {
-	max-width: 1170px;
-	margin: 0 auto;
+		margin: 0 auto;
 	
 	}
 
@@ -288,6 +358,16 @@ h4 {
 	.navLinks a {
 		font-size: 10px;
 	}
+	
+	.sliderText h1 {
+		font-size: 21px;
+	}
+
+	div.sliderTextMain {
+		display: flex;
+    	flex-direction: column;
+    	max-width: 100%;
+	}
 
 	.sliderTextSmall {
 		font-size: 17px;
@@ -299,18 +379,16 @@ h4 {
 	.ourStory {
 		display: flex;
     	flex-direction: column;
-    	margin-left: 20px;
 	}
 
-	.bio, .bioStory, .bioAside {
+	.bio, .bioAside {
 		width: 100%;
 		padding: 30px;
 		font-size: 20px;
 	}
 
 	.bioList {
-		display: inline-flex;
-		flex-direction: initial;
+		display: none;
 	}
 
 	/*our story section ends*/
@@ -351,21 +429,28 @@ h4 {
 
 	/*statistics section ends*/
 
+	/*projects section*/
+
+	ul.projectsList {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	/*team section*/
+
+	.ourTeam {
+		display: flex;
+	}
+
+	.imageGallery2:hover .overlay {
+   		opacity: 0;
+   	}
+
 	/*partners section begins*/
 
-	.partners {
-		width: 100%;
-	}
-
-	.partnerList {
-	    display: flex;
-	    flex-wrap: wrap;
-	    flex-direction: column;
-	}
-
-	.partnerList li {
-		width: 100%;
-	}
+	// .partners {
+	// 	display: none;
+	// }
 
 	/*partners section ends*/
 
@@ -373,6 +458,11 @@ h4 {
 
 	.contactInfo, .footerSubText {
 		font-size: 16px;
+	}
+
+	.footerDiv {
+		display: flex;
+    	flex-direction: column;
 	}
 }
 
@@ -408,6 +498,10 @@ h4 {
 		justify-content: flex-end;
 	}
 
+	ul.navLinks {
+		line-height: 0;
+	}
+
 	.navLinks li a {
 		display: flex;
 		flex-direction: column;
@@ -432,18 +526,12 @@ h4 {
 	.ourStory {
 		display: flex;
     	flex-direction: column;
-    	margin-left: 20px;
 	}
 
-	.bio, .bioStory, .bioAside {
+	.bio, .bioAside {
 		width: 100%;
 		padding: 30px;
 		font-size: 16px;
-	}
-
-	.bioList {
-		display: inline-flex;
-		flex-direction: initial;
 	}
 
 	/*services section begins*/
@@ -541,48 +629,15 @@ h4 {
 	}
 	
 	/*work with us section ends*/
-
-}
-
-	/*query for very obvious breakpoint - team gallery breaks off*/
-	@media (max-width: 1130px) {
-	.gallery2 {
-		display: flex;
-		flex-direction: column;
-	}
 	
-	@media screen and (min-device-width: 480px) and (max-device-width: 700px) { 
-    	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	.team3 {
-		width: 350px;
+	/*footer*/
+	.location, .callUs, .emailUs {
+		width: 100%;
 	}
-
-
 }
 
+	
+ 
 
 
 

@@ -18,19 +18,19 @@
 				<div class="logo">
 					<img src="assets/bg_image1.png" alt="MOJO">
 				</div>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Team</a></li>
-				<li><a href="#">Testimonials</a></li>
-				<li><a href="#">Contact</a></li>
+				<li class="home"><a href="#">Home</a></li>
+				<li><a href="#aboutUs">About Us</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li class="staff"><a href="#team">Team</a></li>
+				<li class="quotes"><a href="#testimonials">Testimonials</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 		<div class="sliderTextMain">
 			<h3 class="sliderText sliderTextSmall">We are minimal.</h3> 
 			<h1 class="sliderText">Creative Innovation</h1> 
-			<button class="sliderButton" type="button">Read More</button>
+			<a href="#aboutUs"><button class="sliderButton" type="button">Read More</button></a>
 		</div>
 	</header>
 	<!--header ends-->
@@ -61,13 +61,13 @@
 
 	<!--our story section begins-->
 	<section class="wrapper">
-		<h4>Who We Are</h4>
+		<h4 id="aboutUs">Who We Are</h4>
 		<h2>The Story About Us</h2>
 		<div class="storyContainer">
 			<div class="ourStory wrapper">
 				<p class="bio bioAside"> <!--paragraph that sits on the side of story about us -->
 					<span class="years">30 years of experience</span>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda voluptas fugit ipsum deleniti ullam consequuntur laudantium. Ipsa nemo ipsum laboriosam in nulla vel quia pariatur, non animi cupiditate voluptas incidunt eaque neque sunt dicta nesciunt.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae debitis enim dignissimos saepe delectus facere voluptas.
 				</p>
 				<p class="bio">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, tempore deleniti sapiente voluptates, minima beatae neque est, nam maxime sequi quos corporis libero necessitatibus. Doloremque error consequuntur mollitia quaerat, autem voluptatibus accusantium quia sunt, voluptas assumenda neque beatae voluptatem dicta amet? Perspiciatis enim dolore vel fugiat voluptas. Nisi, rerum, quibusdam. Eum numquam atque quaerat ex rerum est necessitatibus, provident autem. Nihil quo eaque sapiente reprehenderit molestias accusantium adipisci voluptatibus
@@ -76,16 +76,16 @@
 		</div>
 		<div>
 			<ul class="bioStory bioList ourStory">
-				<li><i class="fa fa-arrow-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</li>
-				<li><i class="fa fa-arrow-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</li>
-				<li><i class="fa fa-arrow-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</li>
+				<li><i class="fa fa-arrow-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet Lorem ipsum</li>
+				<li><i class="fa fa-arrow-right" aria-hidden="true"></i>Consectetur adipisicing elit Laudantiump</li>
+				<li><i class="fa fa-arrow-right" aria-hidden="true"></i>Reiciendis adipisci dicta dolores sit amet.</li>
 			</ul>
 		</div>
 		<img src="assets/desktop_computer.png" alt="The Story About Us" class="desktopComputer">
 	</section>
 	<!--our story section ends-->
 	<!--full bleed section with just text-->
-	<section class="fullBleedServices">
+	<section class="fullBleedServices" id="services">
 		<div>
 			<h4 class="servicesSliderText1 servicesSliderText">What We Do</h4>
 			<h2 class="servicesSliderText2 servicesSliderText">Our Best Services</h2>	
@@ -95,7 +95,7 @@
 	<!--what we do / services section begins-->
 	<section>
 		<div class="servicesRow">
-			<div class="servicesImage1">
+			<div class="servicesImage servicesImage1">
 				<!--background image lives here-->
 			</div>
 			<div class="servicesContent"> 
@@ -114,12 +114,12 @@
 					<button type="button" class="servicesButton">Read More</button>
 				</div>
 			</div>
-			<div class="servicesImage2"> 
+			<div class="servicesImage servicesImage2"> 
 				<!--background image lives here-->
 			</div>
 		</div>
 		<div class="servicesRow">
-			<div class="servicesImage3"> 
+			<div class="servicesImage servicesImage3"> 
 				<!--backgorund image lives here-->
 			</div>
 			<div class="servicesContent">
@@ -151,7 +151,7 @@
 				<p class="statsTitle">Happy Clients</p>
 			</li>
 			<li>
-				<img src="assets/awards_winner.png" alt="Awards Winner">
+				<img src="assets/awards_winner.png" alt="Award Winner">
 				<p class="statNumber">124</p>
 				<p class="statsTitle">Awards Winner</p>
 			</li>
@@ -159,7 +159,7 @@
 	</section>
 	<!--statistics section ends-->
 	<!--successful projects section begins-->
-	<section>
+	<section id="projects">
 		<div>
 			<h4>What We Did</h4>
 			<h2>Our Successful Projects</h2>	
@@ -223,7 +223,7 @@
 	</section>
 	<!--successful projects section ends-->
 	<!--our team section begins-->
-	<section class="teamSection">
+	<section class="teamSection" id="team">
     	<div class="ourTeam wrapper">
 	    	<div>
 				<h4>Our Experts</h4>
@@ -234,7 +234,7 @@
 		          	<img src="assets/team1.png" alt="Our Team" class="gallery2">
 			        <div class="overlay">
 			           	<div class="overlayTextGallery1">Mr. Steve Jakobe</div>
-			           	<div class="overlayTextGallery2">Marketing Manager</div>
+			           	<div class="overlayTextGallery2">COO</div>
 			        </div>
 		        </li>
 	          	<li class="imageGallery2">
@@ -256,7 +256,7 @@
   	</section>
 	<!--our team section ends-->
 	<!--quote section begins-->
-	<section>
+	<section id="testimonials">
 		<div class="quoteDiv">
 			<img src="assets/quote.png" alt="Quotation Mark" class="quotationMark">
 			<p class="quote mainQuote">Excellent service given by company in industry!!!</p>
@@ -287,7 +287,7 @@
 	</section>
 	<!--ready to work section ends-->
 	<!--partners section begins-->
-	<section>
+	<section class="partners">
 		<h4>Trusted Partners</h4>
 		<h2>Our Happy Partners</h2>
 			<div class="partners wrapper">
@@ -303,7 +303,7 @@
 	</section>
 	<!--partners section ends-->
 	<!--footer begins-->
-	<footer>
+	<footer id="contact">
 		<div class="footerDiv"> <!--footerdiv begins-->
 			<div class="location">
 				<img src="assets/location_icon.png"></li>

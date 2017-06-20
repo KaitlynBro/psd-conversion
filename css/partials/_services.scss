@@ -17,32 +17,32 @@
 }
 
 .servicesContent {
-	width: 50%;
+	width: 100%;
 	display: flex;
 	align-items: center;
 }
 
 .contentWrapper {
-	width: 585px;
+	width: 90%;
 }
 
 .servicesImage1 {
 	background: url(../assets/web_development.png);
-	width: 940px;
+	width: 100%;
     height: 500px;
     max-width: 50%;
 }
 
 .servicesImage2 {
 	background: url(../assets/brand_design.png);
-	width: 940px;
+	width: 100%;
     height: 500px;
     max-width: 50%;
 }
 
 .servicesImage3 {
 	background: url(../assets/digital_marketing.png);
-	width: 940px;
+	width: 100%;
     height: 500px;
     max-width: 50%;
 }
@@ -58,7 +58,7 @@
 
 .servicesTitle {
 	font-family: $primaryFont;
-	color: rgba(31, 31, 31, 0.3);
+	color: #5b5b5b;
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -72,7 +72,7 @@
 	position: absolute;
 	top: 18px;
 	background-color: rgba(31, 31, 31, 0.3);;
-	width: 50px;
+	width: 25px;
 	height: 1px;
 }
 
